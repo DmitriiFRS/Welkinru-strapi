@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Продукты",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "reference": {
+      "type": "string"
+    },
+    "kW": {
+      "type": "string"
+    },
+    "Voltage": {
+      "type": "string"
+    },
+    "ton": {
+      "type": "decimal"
+    },
+    "kBTU": {
+      "type": "biginteger"
+    },
+    "HP": {
+      "type": "integer"
+    },
+    "description1": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "text"
+    },
+    "description3": {
+      "type": "text"
+    }
+  }
+}

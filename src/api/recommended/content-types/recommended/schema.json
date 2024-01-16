@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recommendeds",
+  "info": {
+    "singularName": "recommended",
+    "pluralName": "recommendeds",
+    "displayName": "Рекомендованные"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "produkties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}
