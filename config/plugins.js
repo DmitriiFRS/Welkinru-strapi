@@ -1,4 +1,4 @@
-export default () => ({
+module.exports = () => ({
   graphql: {
     enabled: true,
     config: {
