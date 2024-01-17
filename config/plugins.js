@@ -8,6 +8,7 @@ module.exports = () => ({
       apolloServer: {
         tracing: true,
       },
+      route: "/graphql",
     },
   },
 });
