@@ -39,13 +39,13 @@
       "type": "string"
     },
     "ton": {
-      "type": "decimal"
+      "type": "string"
     },
     "kBTU": {
-      "type": "biginteger"
+      "type": "string"
     },
     "HP": {
-      "type": "integer"
+      "type": "string"
     },
     "description1": {
       "type": "text"
