@@ -41,7 +41,7 @@
     "ton": {
       "type": "string"
     },
-    "kBTU": {
+    "HP": {
       "type": "string"
     },
     "Heat_Output": {
