@@ -32,10 +32,10 @@
     "reference": {
       "type": "string"
     },
-    "kW": {
+    "Cooling_Output": {
       "type": "string"
     },
-    "Voltage": {
+    "size": {
       "type": "string"
     },
     "ton": {
@@ -44,7 +44,7 @@
     "kBTU": {
       "type": "string"
     },
-    "HP": {
+    "Heat_Output": {
       "type": "string"
     },
     "description1": {
@@ -55,6 +55,9 @@
     },
     "description3": {
       "type": "text"
+    },
+    "subtype": {
+      "type": "string"
     }
   }
 }
