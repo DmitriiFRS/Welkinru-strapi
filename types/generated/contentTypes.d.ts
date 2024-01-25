@@ -799,6 +799,42 @@ export interface ApiAboutAbout extends Schema.SingleType {
   };
 }
 
+export interface ApiAnswerAnswer extends Schema.CollectionType {
+  collectionName: 'answers';
+  info: {
+    singularName: 'answer';
+    pluralName: 'answers';
+    displayName: '\u041E\u0442\u0432\u0435\u0442\u044B/\u0421\u0442\u0430\u0442\u044C\u0438';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    answer: Attribute.Text;
+    answer2: Attribute.Text;
+    answer3: Attribute.Text;
+    answer4: Attribute.Text;
+    answer5: Attribute.Text;
+    question: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::answer.answer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::answer.answer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiMaintitleMaintitle extends Schema.SingleType {
   collectionName: 'maintitles';
   info: {
@@ -883,7 +919,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     Cooling_Output: Attribute.String;
     size: Attribute.String;
     ton: Attribute.String;
-    kBTU: Attribute.String;
+    HP: Attribute.String;
     Heat_Output: Attribute.String;
     description1: Attribute.Text;
     description2: Attribute.Text;
@@ -961,6 +997,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::about.about': ApiAboutAbout;
+      'api::answer.answer': ApiAnswerAnswer;
       'api::maintitle.maintitle': ApiMaintitleMaintitle;
       'api::phone.phone': ApiPhonePhone;
       'api::product.product': ApiProductProduct;
