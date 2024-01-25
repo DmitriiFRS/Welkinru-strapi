@@ -817,6 +817,7 @@ export interface ApiAnswerAnswer extends Schema.CollectionType {
     answer4: Attribute.Text;
     answer5: Attribute.Text;
     question: Attribute.Text;
+    href: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

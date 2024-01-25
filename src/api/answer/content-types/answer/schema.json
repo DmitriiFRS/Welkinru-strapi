@@ -29,6 +29,9 @@
     },
     "question": {
       "type": "text"
+    },
+    "href": {
+      "type": "string"
     }
   }
 }
